@@ -1,0 +1,153 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.header{
+	text-align: center;
+	padding: 27px 0 20px;
+}
+
+
+/* default step setting */
+.steps-section{
+	font-family: "PT Sans", sans-serif;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.steps-section ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	display: inline-block;
+}
+.steps-section li{
+	border: 1px solid #eee;
+	float: left;
+	height: 46px;
+	padding: 10px 14px;
+	font-size: 13px;
+	line-height: 23px;
+	position: relative;
+}
+.steps-section .current{
+	border-color: transparent;
+	color: #fff;
+}
+.steps-section span{
+	vertical-align: middle;
+}
+.steps-section .num{
+	font-size: 20px;
+}
+/* conditional step setting */
+.steps-section li:first-child{
+	border-radius: 6px 0 0 6px;
+}
+.steps-section li:last-child{
+	border-radius: 0 6px 6px 0;
+}
+.steps-section li:not(:first-child){
+	padding-left: 20px;	
+}
+
+.steps-section li.current:not(:first-child):before,
+.steps-section li:not(:last-child):after{
+	content: '';
+	display: block;
+	width: 13px;
+	height: 45px;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	z-index: 1;
+}
+/* conditional step backgrouds setting */
+.steps-section li{
+	background: url(../images/steps.jpg) repeat-x center center;
+}
+.steps-section .current{
+	background-image: url(../images/step-current.jpg);
+}
+.steps-section li.current:not(:first-child):before{
+	left: 0;
+	background: url(../images/step-current-left.png);
+}
+.steps-section li:not(:last-child):after{
+	background: url(../images/step-right.png) no-repeat;
+}
+.steps-section .current:not(:last-child):after{
+	background-image: url(../images/step-current-right.png);
+}
+/* steps setting end */
+
+
+/* thanksyou message */
+.thankyou-message{
+	font-size: 18px;
+	color: #2f3035;
+	font-family: "PT Sans", sans-serif;
+	text-align: center;
+}
+.thankyou-message h1{
+	font-size: 35px;
+	margin-bottom: 30px;
+	margin-top: 40px;
+}
+
+/* notificaton box */
+.notification-box{
+	border: 1px solid #c2c2c2;
+	border-radius: 10px;
+	font-size: 16px;
+	padding: 40px;
+	text-align: left;
+	max-width: 480px;
+	margin: 40px auto;
+}
+.notification-box ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.notification-box li{
+	margin-bottom: 40px;
+	position: relative;
+	padding-left: 60px;
+}
+.notification-box li .fa{
+	font-size: 3em;
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+
+
+
+/* footer */
+.footer{
+	font-size: 12px;
+	line-height: 1.2;
+}
+.footer ul li{
+	padding: 0;
+}
+.footer ul li ~ li:before{
+	content: "|";
+	margin: 0 10px;
+	display: inline-block;
+}
+.footer ul{
+	margin-bottom: 5px;
+}
+.footer p{
+	margin-bottom: 20px;
+}
+
+/* conditional changes in bs3 classes */
+.container{
+	max-width: 916px;
+}
+.text-success{
+	color : #2dcb29;	
+}
