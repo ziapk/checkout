@@ -1,6 +1,9 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+	font-family: "PT Sans", sans-serif;
+}
 .header{
 	text-align: center;
 	padding: 27px 0 20px;
@@ -9,7 +12,7 @@
 
 /* default step setting */
 .steps-section{
-	font-family: "PT Sans", sans-serif;
+	
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -113,6 +116,10 @@
 	margin-bottom: 40px;
 	position: relative;
 	padding-left: 60px;
+	min-height: 46px;
+}
+.notification-box li:last-child{
+	margin-bottom: 0;
 }
 .notification-box li .fa{
 	font-size: 3em;
@@ -128,6 +135,7 @@
 .footer{
 	font-size: 12px;
 	line-height: 1.2;
+	margin-top: 50px;
 }
 .footer ul li{
 	padding: 0;
@@ -150,4 +158,73 @@
 }
 .text-success{
 	color : #2dcb29;	
+}
+
+
+/* step2 page */
+.title-bar{
+	margin: 20px 0;
+	font-size: 18px;
+}
+.title-bar a{
+	font-size: 14px;
+	color: inherit;
+}
+
+.box{
+	border: 1px solid #c2c2c2;
+	border-radius: 10px;
+	font-size: 11px;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+.safe-checkout h4{
+	margin-bottom: 20px;
+}
+
+.safe-checkout p{
+	margin-bottom: 20px;
+}
+.safe-checkout ul{
+	margin: 30px 0;
+}
+.safe-checkout li{
+	margin-bottom: 20px;
+}
+
+.payment-method-list{
+	margin-bottom: 0;
+	text-align: center;
+}
+.payment-method-list label{
+	cursor: pointer;
+}
+.payment-method-list img{
+	display: block;
+	margin: 0 auto 10px;
+}
+label input[type="radio"]{
+	display: none;
+}
+label input[type="radio"] + span{
+	background: url(../images/radio.png) no-repeat;
+	width: 13px;
+	height: 13px;
+	display: block;
+	margin: 0 auto;
+
+
+}
+label input[type="radio"]:checked + span{
+	background: url(../images/radio-checked.png) no-repeat;
+}
+.list-justified{
+	display: table;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.list-justified li{
+	display: table-cell;
+	vertical-align: middle;
 }
