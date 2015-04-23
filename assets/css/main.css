@@ -160,6 +160,10 @@ body{
 	color : #2dcb29;	
 }
 
+.text-light{
+	color: #808487;
+}
+
 
 /* step2 page */
 .title-bar{
@@ -174,9 +178,12 @@ body{
 .box{
 	border: 1px solid #c2c2c2;
 	border-radius: 10px;
-	font-size: 11px;
 	padding: 15px;
 	margin-bottom: 20px;
+}
+.safe-checkout{
+	font-size: 11px;
+	padding-top: 25px;
 }
 .safe-checkout h4{
 	margin-bottom: 20px;
@@ -203,20 +210,31 @@ body{
 	display: block;
 	margin: 0 auto 10px;
 }
-label input[type="radio"]{
+label{
+	font-weight: normal;
+}
+label input[type="radio"],label input[type="checkbox"]{
 	display: none;
 }
-label input[type="radio"] + span{
-	background: url(../images/radio.png) no-repeat;
-	width: 13px;
-	height: 13px;
+label input[type="radio"] + span,label input[type="checkbox"] + span{
+	background: url(../images/radio.png) no-repeat center center;
+	width: 14px;
+	height: 14px;
 	display: block;
 	margin: 0 auto;
-
-
+}
+label input[type="checkbox"] + span{
+	background-image: url(../images/checkbox.jpg);
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: top;
+	margin-top: 3px;
 }
 label input[type="radio"]:checked + span{
-	background: url(../images/radio-checked.png) no-repeat;
+	background: url(../images/radio-checked.png) no-repeat center center;
+}
+label input[type="checkbox"]:checked + span{
+	background-image: url(../images/checkbox-checked.jpg);
 }
 .list-justified{
 	display: table;
@@ -227,4 +245,151 @@ label input[type="radio"]:checked + span{
 .list-justified li{
 	display: table-cell;
 	vertical-align: middle;
+}
+.paymentinfo-form{
+	padding-right: 25px;
+	margin-bottom: 25px;
+}
+.paymentinfo-form .control-label{
+	text-align: left;
+	font-weight: normal;
+	padding-right: 0;
+	
+}
+.paymentinfo-form .form-group{
+	position: relative;
+}
+.paymentinfo-form .help-icon:focus,
+.paymentinfo-form .help-icon:hover{
+	text-decoration: none;
+	outline: none;
+}
+.paymentinfo-form .help-icon{
+	line-height: 34px;
+	font-size: 1.5em;
+	position: absolute;
+	right: -10px;
+	color: #e0e0e0;
+}
+.paymentinfo-form .cvc-img{
+	padding-top: 3px;
+}
+.total-amount-secton{
+}
+.total-amount-secton .btn-submit{
+	text-align: left;
+	position: relative;
+	background: #8fc816; /* Old browsers */
+	background: -moz-linear-gradient(top,  #8fc816 0%, #659f00 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8fc816), color-stop(100%,#659f00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #8fc816 0%,#659f00 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #8fc816 0%,#659f00 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #8fc816 0%,#659f00 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #8fc816 0%,#659f00 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc816', endColorstr='#659f00',GradientType=0 ); /* IE6-9 */
+
+}
+.btn-submit .fa{
+	position: absolute;
+	right: 7px;
+	top: 7px;
+	height: 1.4em;
+	width: 1.4em;
+	text-align: center;
+	line-height: 1.35em;
+	border-radius: 50px;
+	background: red;
+	font-size: 13px;
+	background: rgba(0,0,0,0.35);
+}
+
+.total-amount-secton h2{
+	font-weight: bold;
+	margin-bottom: 60px;
+}
+
+.paymentinfo-footer{
+	background: #f0f0f0;
+	border-top: 1px solid #d6d9dd;
+	padding-top: 10px;
+}
+
+.cardlist-left,.cardlist-right{
+	display: inline-block;
+}
+.cardlist-right a{
+	display: inline-block;
+	margin-left: 12px;
+	margin-bottom: 8px;
+}
+.cardlist-left a{
+	display: inline-block;
+	margin-right: 12px;
+	margin-bottom: 8px;
+}
+.with-divider{
+	position: relative;
+}
+.v-divider{
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	line-height: 34px;
+	padding: 0;
+	text-align: center;
+}
+
+/* step 1 */
+.h-sep{
+	width: 300px;
+	margin: 40px auto;
+	text-align: center;
+	height: 1px;
+	background: #ededed;
+	color: #999;
+}
+.h-sep span{
+	position: relative;
+	top: -18px;
+	display: block;
+	margin: 0 auto;
+	text-transform: uppercase;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #ededed;
+	background: #fff;
+	border-radius: 50px;
+}
+
+.top-row{
+	margin-bottom: 30px;
+}
+.top-row h5{
+	font-size: 15px;
+	float: left;
+	margin: 0;
+	text-transform: uppercase;
+}
+.input-transparent{
+	width: 100%;
+	background: none;
+	border: none;
+	resize:vertical;
+}
+.table{
+	border: 1px solid #e2e2e2;
+}
+.top-row .btn-submit{
+	background: #abd85e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #d1e990 0%, #abd85e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1e990), color-stop(100%,#abd85e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d1e990 0%,#abd85e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d1e990 0%,#abd85e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d1e990 0%,#abd85e 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d1e990 0%,#abd85e 100%); /* W3C */
+	border-color: #adc570;
+	color: #54770f;
+	min-width:  200px;
 }
