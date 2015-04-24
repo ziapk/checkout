@@ -38,7 +38,7 @@
       </section>
       <div class="title-bar">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 hidden-xs">
                 <a href="#" title=""><span class="fa fa-angle-left"></span> Back to Customer Information</a>                
             </div>
             <div class="col-md-5 col-sm-8 text-center">
@@ -48,8 +48,8 @@
       </div>
       <div class="h-sep"><span>or</span></div>
       <div class="row">
-          <div class="col-sm-6">
-            <div class="top-row">
+          <div class="col-md-6">
+            <div class="top-row clearfix">
                 <h5>Shipping address</h5>
                 <label class="pull-right"><input type="checkbox"><span></span> Different billing address</label>
             </div>
@@ -97,12 +97,121 @@
                 </tr>
             </table>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
+            <div class="top-row clearfix">
+                <label><input type="checkbox"><span></span> I accept terms and conditions</label>
+                <button class="btn btn-submit pull-right btn-success">Continue</button>
+            </div>
+            <h5>ORDER Summary</h5>
+            <table class="table order-summery">
+                <tr>
+                    <td width="128">
+                        <img src="assets/images/img1.jpg" alt="">
+                    </td>
+                    <td>
+                        <div class="radio-section">
+                            <label>
+                                <input type="radio" name="type1" id="">
+                                <span></span>
+                                <span class="item-title">1 x NoZnore HGS 35 <br> (Previously  499 kr)</span>
+                                <span class="pull-right">399 kr</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="type1" id="">
+                                <span></span>
+                                <span class="item-title">1 x NoZnore HGS 35 <br> (Previously  499 kr)</span>
+                                <span class="pull-right">399 kr</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="type1" id="">
+                                <span></span>
+                                <span class="item-title">1 x NoZnore HGS 35 <br> (Previously  499 kr)</span>
+                                <span class="pull-right">399 kr</span>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="128">
+                        <img src="assets/images/img2.jpg" alt="">
+                    </td>
+                    <td>
+                        <div class="add-sub-section">
+                            <span class="qty">
+                                <em class="add">+</em>
+                                <em class="value">1</em>
+                                <em class="sub">-</em>
+                            </span> 
+                            <span>NoZnore Dental Box</span>
+                            <span class="pull-right">78 kr</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="#">If you have a discount code, you can click here to enter it <span class="fa fa-plus-circle"></span></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="font-normal">
+                        <label><input type="checkbox" name="type2" id=""><span></span> Extended returns (90 days) <span class="pull-right">+ 15 kr</span></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="font-normal">
+                        <div class="clearfix"><span>Subtotal</span> <span class="pull-right">813 kr</span></div>
+                        <div class="clearfix"><span>Shipping</span> <span class="pull-right">FREE SHIPPING</span></div>
+                        <div class="clearfix"><span>Taxes</span> <span class="pull-right">-</span></div>
+                        <div class="clearfix gtotal"><span>TOTAL</span> <strong class="pull-right">813 kr</strong></div>
+                    </td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td class="h4">Payment Due</td><td class="text-theme h3">813 kr</td>
+                    </tr>
+                </tfoot>
+            </table>
             <div class="top-row">
                 <label><input type="checkbox"><span></span> I accept terms and conditions</label>
                 <button class="btn btn-submit pull-right btn-success">Continue</button>
             </div>
           </div>
+      </div>
+      <div class="dotted-line"></div>
+      <div class="rotating-products">
+        <ul class="bxslider">
+            <li>
+                <div class="product-img">
+                    <img src="assets/images/product1.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <p>NoZnore Dental Box</p>
+                    <p><strong>39 kr</strong></p>
+                    <p><a href="#" class="btn btn-default">Info</a><a href="#" class="btn btn-success">Add to order</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="product-img">
+                    <img src="assets/images/product2.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <p>NoZnore Nose Clip</p>
+                    <p><strong>199 kr</strong></p>
+                    <p><a href="#" class="btn btn-default">Info</a><a href="#" class="btn btn-success">Add to order</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="product-img">
+                    <img src="assets/images/product3.jpg" alt="">
+                </div>
+                <div class="product-info">
+                    <p>NoZnore Traveling Pack</p>
+                    <p><strong>299 kr</strong></p>
+                    <p><a href="#" class="btn btn-default">Info</a><a href="#" class="btn btn-success">Add to order</a></p>
+                </div>
+            </li>
+        </ul>
+          
       </div>
       <footer class="footer">
         <div class="text-center">
@@ -129,6 +238,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jquery.bxslider.min.js"></script>
     <script src="assets/js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -139,6 +249,20 @@
         e.src='//www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        var w = $(window).width()
+        $('.bxslider').bxSlider({
+            pager :false,
+            minSlides : w > 900 ? 3 : w > 767 ? 2 : 1,
+            maxSlides : w > 900 ? 3 : w > 767 ? 2 : 1,
+            moveSlides : 1,
+            slideWidth : 700,
+            nextText : '&#xf105;',
+            prevText : '&#xf104;'
+        })
+    })
     </script>
   </body>
 </html>
