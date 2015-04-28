@@ -433,7 +433,7 @@ label input[type="checkbox"]:checked + span{
 }
 
 .top-row{
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 h5{
 	font-size: 15px;
@@ -739,4 +739,30 @@ label{
 .btn-grey{
 	background: #cfcfcf;
 	color: #373737;
+}
+
+
+
+/* updates */
+@media (max-width: 767px){
+	img{
+		max-width: 100%;
+	}
+	.header{
+		width: 200px;
+		margin: 0 auto;
+	}
+	.steps-section{
+		display: none;
+	}
+	.safe-checkout ul{
+		margin: 0;
+	}
+	.safe-checkout li{
+		display: inline-block;
+	}
+	.list-justified li{
+		display: inline-block;
+		margin: 0 10px;
+	}
 }
