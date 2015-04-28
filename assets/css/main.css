@@ -435,6 +435,10 @@ label input[type="checkbox"]:checked + span{
 .top-row{
 	margin-bottom: 15px;
 }
+.billing-address-text{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
 h5{
 	font-size: 15px;
 	text-transform: uppercase;
